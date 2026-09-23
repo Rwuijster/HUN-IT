@@ -8,10 +8,6 @@
 	--text-color-black: black;
 }
 
-body {
-	height: 300vh;
-}
-
 html {
 	font-family: sans-serif;
 	color: var(--text-color);
