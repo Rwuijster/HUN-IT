@@ -9,7 +9,7 @@
 }
 
 html {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	color: var(--text-color);
 }
 
@@ -34,37 +34,57 @@ h1, h2, h3 {
 
 /* ------------------------ */
 
-#header-logo-mobile {
-	height: 66px;
-	width: 120px;
-	display: none;
-	padding: 0em;
+#mobile-logo-button {
+	display: 	none;
+	padding: 1em 0 0 0.5em;
+	height: 60px;
 	background: none;
 	border: none;
 }
 
+
 nav {
 	background-color: var(--primary-color);
 	border-bottom: 1px solid var(--hover-color);
+	display: flex;
 }
 
 nav ul{
-	list-style: none;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-template-columns: repeat(12, 1fr);
+	list-style: none;
+}
+
+#desktop-logo {
+	height: 3rem;
+	padding: 0.5em;
+}
+#desktop-logo-image {
+	height: 100%;
+	
+}
+.home-li {
+}
+#about-li {
+}
+#services-li {
+
+}
+#contact-li {
+
 }
 
 nav li {
 	display: flex;
 }
 
-nav .home-li{
-	margin-right: auto;
-}
-
 nav a {
 	display: flex;
 	text-decoration: none;
 	color: var(--tertiary-color);
+	font-size: clamp(1rem, 1vw, 3rem);
 	padding: 1em 2em;
 	transition: background-color 150ms ease;
 }
@@ -94,6 +114,10 @@ nav a.active-link {
 	cursor: pointer;
 }
 
+#close-sidebar-button-list {
+	display: none;
+}
+
 #menu-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
@@ -103,9 +127,22 @@ nav a.active-link {
 
 }
 
+/* end of navbar
+
+/*start section styling */
+
+
 @media (max-width: 50rem) {
-	#open-sidebar-button, #close-sidebar-button, #header-logo-mobile {
-		display: block;
+	#open-sidebar-button, #close-sidebar-button, #mobile-logo-button {
+		display: flex;
+	}
+
+	#desktop-logo {
+		display: none;
+	}
+
+	#close-sidebar-button-list {
+		display: unset;
 	}
 	header {
 		display: flex;
@@ -134,6 +171,7 @@ nav a.active-link {
 	}
 
 	nav ul {
+		display: unset;
 		width: 100%;
 		flex-direction: column;
 	}

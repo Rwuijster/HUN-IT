@@ -15,16 +15,18 @@
     <body>
   <header>
     <a id="mobile-logo-button" href="index.html">
-      <div id="header-logo-mobile" aria-label="Back to home page"><img src="company_logo_1v3.svg"></div>
+      <img src="company_logo_1v4.svg">
     </a>
     <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
       <img src="sidebar_button_open.svg" alt="sidebar button open" height="40px" width="40px"/>
     </button>
 
-
         <nav id="navbar">
+          <div id="desktop-logo">
+              <img id="desktop-logo-image" src="company_logo_1v4_white.svg">
+            </div>  
           <ul>
-            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img src="sidebar_button_close.svg" alt="sidebar button close" height="40px" width="40px"/></button></li>
+            <li id="close-sidebar-button-list"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img src="sidebar_button_close.svg" alt="sidebar button close" height="40px" width="40px"/></button></li>
             <li class="home-li"><a class="active-link" aria-current="page" href="#">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="services.html">Services</a></li>
