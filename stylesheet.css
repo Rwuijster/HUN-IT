@@ -34,6 +34,10 @@ h1, h2, h3 {
 
 /* ------------------------ */
 
+button {
+	font-family: inherit;
+}
+
 #mobile-logo-button {
 	display: 	none;
 	padding: 1em 0 0 0.5em;
@@ -130,7 +134,8 @@ nav a.active-link {
 
 #header-action-button {
 	display: none;
-	margin-right: 5%;
+	margin-right: 10%;
+	font-size: clamp(1rem, 1vw, 3rem);
 }
 
 /* end of navbar
