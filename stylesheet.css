@@ -1,7 +1,7 @@
 /* Boiler plate code below */
 :root {
 	--primary-color: #338000ff;
-	--hover-color: #3fa300ff;
+	--hover-color: #51cd00;
 	--dark-color: #235d00ff;
 	--secondary-color: #ecececd9;
 	--tertiary-color: white;
@@ -37,11 +37,12 @@ h1, h2, h3 {
 /* ------------------------ */
 
 header {
-	background-color: var(--primary-color);
+	background-color: var(--tertiary-color);
 	position: sticky;
 	display: flex;
 	width: 100%;
 	top: 0;
+	border-bottom: 1px solid var(--primary-color);
 }
 
 main {
@@ -55,10 +56,8 @@ main {
 	border: none;
 }
 
-
 nav {
 	background-color: inherit;
-	border-bottom: 1px solid var(--hover-color);
 	width: 100%;
 	max-width: 90rem;
 	display: flex;
@@ -103,20 +102,16 @@ nav li {
 nav a {
 	display: flex;
 	text-decoration: none;
-	color: var(--tertiary-color);
+	color: var(--primary-color);
 	font-size: clamp(1rem, 1vw, 3rem);
 	padding: 1em 2em;
-	transition: background-color 150ms ease;
+	transition: color 250ms ease;
+	font-weight: 550;
 }
 
 nav a:hover {
-	color: var(--dark-color);
+	color: var(--hover-color);
 }
-
-nav a.active-link {
-	border-bottom: 2px solid var(--text-color);
-}
-
 #open-sidebar-button {
 	display: none;
 	background: none;
@@ -189,6 +184,7 @@ nav a.active-link {
 		width: min(15em, 100%);
 		border-left: 1px solid var(--hover-color);
 		transition: right 300ms ease-out;
+		background-color: var(--primary-color);
 	}
 	nav.show {
 		right: 0;
@@ -206,6 +202,7 @@ nav a.active-link {
 	nav a {
 		width: 100%;
 		padding-left: 2.5em;
+		color: var(--tertiary-color);
 	}
 	nav a.active-link {
 		border-bottom: none;
