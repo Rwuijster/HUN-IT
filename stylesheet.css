@@ -3,8 +3,7 @@
 	--primary-color: #338000ff;
 	--hover-color: #51cd00;
 	--dark-color: #235d00ff;
-	/* --secondary-color: #ecececd9; */
-	--secondary-color: #ffffff;
+	--secondary-color: #ecececd9;
 	--tertiary-color: white;
 	--text-color-black: black;
 }
@@ -167,10 +166,19 @@ nav a:hover {
 
 .text-block {
 	display: flex;
+	text-align: center;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 
 }
+
+.topper {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
 
 .image-block {
 
@@ -178,7 +186,7 @@ nav a:hover {
 
 #hero-section {
 	background-color: var(--primary-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 }
 
 /* end section styling */
