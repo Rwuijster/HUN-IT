@@ -56,7 +56,7 @@ header {
 nav {
 	background-color: inherit;
 	width: 100%;
-	max-width: 90rem;
+	max-width: 130rem;
 	display: flex;
 	align-items: center;
 	z-index: 10;
@@ -177,6 +177,14 @@ nav a:hover {
 	display: block;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.section-container h1 {
+	font-weight: 850;
+	font-size: clamp(2.4rem, 5vw, 7rem);
+	width: 100%;
+	max-width: 15ch;
 }
 
 
@@ -187,6 +195,7 @@ nav a:hover {
 #hero-section {
 	background-color: var(--primary-color);
 	color: var(--tertiary-color);
+	padding: clamp(8rem, 18vw, 16rem) 1rem clamp(3.8rem, 8vw, 6rem) 1rem;
 }
 
 /* end section styling */
@@ -241,14 +250,15 @@ nav a:hover {
 		margin-right: unset;
 	}
 
-	/* start section styling mobile */
+	/* start section desktop styling */
 
 }
 
 @media (min-width: 1200px) {
 	#header-action-button {
 		display: block;
-		inlin
+		margin-left: auto;
+		
 	}
 
 	header {
